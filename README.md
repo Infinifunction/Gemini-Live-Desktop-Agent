@@ -76,6 +76,45 @@ After doing this, the AI will no longer attempt to access system terminals.
 
 ---
 
+## 🛑 if you want to limit the powers of AI
+
+You can delete the following lines that require administrator permission:
+
+```python
+def is_admin():
+    try:
+        return ctypes.windll.shell32.IsUserAnAdmin()
+    except:
+        return False
+```
+
+and
+
+```python
+def run_as_admin():
+    """Script'i administrator olarak yeniden başlat"""
+    if is_admin():
+        return True
+    
+    print("🔒 Administrator yetkileri isteniyor...")
+    
+    # Mevcut script ve parametreleri
+    script = os.path.abspath(sys.argv[0])
+    params = ' '.join([f'"{x}"' for x in sys.argv[1:]])
+    
+    # Administrator olarak yeniden başlat
+    try:
+        ctypes.windll.shell32.ShellExecuteW(
+            None, "runas", sys.executable, f'"{script}" {params}', None, 1
+        )
+        sys.exit(0)
+    except Exception as e:
+        print(f"❌ Administrator yetkileri alınamadı: {e}")
+        return False
+```
+
+---
+
 ## 🔐 Additional Safety Recommendations
 
 Even with terminal execution disabled, consider:
@@ -84,7 +123,7 @@ Even with terminal execution disabled, consider:
 -Monitoring behavior until you're confident in stability.
 -Never using it on critical production systems.
 
---
+---
 
 ## 📦 Installation & Setup
 
@@ -95,7 +134,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
---
+---
 
 ## ⭐ Support
 
