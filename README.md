@@ -5,7 +5,7 @@ An advanced, multimodal AI assistant powered by **Google Gemini 2.5 Flash (Live 
 > **⚠️ WARNING:** This software grants an AI model direct control over your mouse, keyboard, file system, and terminal with **System Administrator** privileges. Use with extreme caution.
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
-![Gemini](https://img.shields.io/badge/AI-Gemini%202.0%25Flash-orange)
+![Gemini](https://img.shields.io/badge/AI-Gemini%202.5%20Flash-orange)
 ![Selenium](https://img.shields.io/badge/Web-Selenium-green)
 
 ---
@@ -121,4 +121,5 @@ MIT License
 
 ## 🤝 Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 
