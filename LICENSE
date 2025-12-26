@@ -1,0 +1,33 @@
+MIT License
+
+Copyright (c) 2025 Infinifunction
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+**ADDITIONAL DISCLAIMER OF LIABILITY REGARDING AI AUTONOMY**
+
+By using this Software, you acknowledge and agree that:
+
+1.  **High-Risk Nature**: This Software uses Generative AI (Google Gemini Live) to interpret voice/video inputs and execute system-level commands with **Administrator Privileges**. It has the capability to delete files, modify system registries, install/uninstall applications, and control input devices (mouse/keyboard).
+
+2.  **No Guarantee of Safety**: The Authors do not guarantee that the AI's actions will be safe, correct, or aligned with user intent. The AI may hallucinate, misinterpret commands, or execute unintended actions that could result in **irreversible data loss**, **system instability**, or **security breaches**.
+
+3.  **User Responsibility**: You assume full responsibility for all actions taken by the Software. You agree to run this Software only in a controlled environment (e.g., a Virtual Machine) and to monitor its operation continuously. The Authors shall NOT be held liable for any damage to your hardware, software, data, or network resulting from the use of this AI agent.
